@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pxf-framework-webview"
+version = "0.1.0"
+description = ""
+authors = ["NewWars"]
+readme = "README.md"
+packages = [
+    {include = "pxf_framework_webview"},
+    {include = "pxf_framework_webview/py.typed"}
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyscript = "^0.2.5"
+
+pxf-framework-core = { path="../pxf-framework-core/" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

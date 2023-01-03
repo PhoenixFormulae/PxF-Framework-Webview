@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="runtime/pyodide/pyodide.js"></script>
+    <title>Window</title>
+  </head>
+  <body>
+  Something
+  <script type="text/javascript">
+      async function main(){
+        let pyodide = await loadPyodide();
+        console.log(pyodide.runPython("1 + 2"));
+      }
+      main();
+    </script>
+  </body>
+</html>
